@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Animaciones de entrada y salida</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="bienvenida">
+    
+    <h1>Hola! Bienvenido a esta practica</h1> <!-- dando la bienvenida-->
+    <p>Si quieres ver el modal, dale click <button class="btn primary" id="primer-boton">aquí</button>, pero sino, tambien le puedes dar click <button class="btn warning" id="segundo-boton">aquí</button></p><!-- indicando al usuario que puede hacer-->
+  </div>
+  <div class="overlay" id="overlay">
+    <div class="modal" id="primer-modal">
+      <span class="icon-cerrar boton" id="cerrar-primero"></span><!--icono de cerrar-->
+      <h1>Gracias por oprimir el modal :D</h1><!--titulo para mostrar al usuario-->
+      <p>Este modal va a desaparecer en: <span id="primer-tiempo">5 segundos</span></p><!--contador-->
+    </div><!--primer modal-->
+    <div class="modal" id="segundo-modal">
+      <span class="icon-cerrar boton" id="cerrar-segundo"></span><!--icono de cerrar-->
+      <h1>Creiste que iba a pasar otra cosa? XD</h1><!--titulo para mostrar al usuario-->
+      <p>Pues abriste otro modal pero va a desaparecer en: <span id="segundo-tiempo">10 segundos</span></p><!--contador-->
+    </div><!--segundo modal-->
+  </div> <!--overlay-->  
+  <script src="app.js"></script>
+</body>
+</html>
